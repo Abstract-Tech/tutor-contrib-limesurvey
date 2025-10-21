@@ -76,6 +76,12 @@ return array(
         // LimeSurvey developers: Set this to 2 to additionally display STRICT PHP error messages and put MySQL in STRICT mode and get full access to standard themes
         'debug'=>0,
         'debugsql'=>0,
+        'emailmethod' => 'smtp',
+        'emailsmtphost' => '{{ SMTP_HOST }}:{{ SMTP_PORT }}',
+        'emailsmtpuser' => '{{ SMTP_USERNAME|default("") }}',
+        'emailsmtppassword' => '{{ SMTP_PASSWORD|default("") }}',
+        'emailsmtpssl' => '{% if SMTP_USE_TLS|default(false) %}tls{% endif %}',
+        'emailsmtpdebug' => 1,
         // 'force_xmlsettings_for_survey_rendering' => true, // Uncomment if you want to force the use of the XML file rather than DB (for easy theme development)
         // 'use_asset_manager'=>true, // Uncomment if you want to use debug mode and asset manager at the same time
         // Update default LimeSurvey config here
