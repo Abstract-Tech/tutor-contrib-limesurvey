@@ -14,6 +14,15 @@ Change Log
 Unreleased
 ----------
 
+[18.0.3] - 2026-10-22
+---------------------
+
+Security
+~~~~~~~~
+
+- Bump base image ``acspri/limesurvey`` from 6.2.0 (PHP 8.1, end of life) to 7.7.0.1
+  (LimeSurvey 7.7.0, PHP 8.3.36). Fixes PHP2Shell (CVE-2026-109618, CVE-2026-109619).
+
 [18.0.0] - 2025-08-28
 ---------------------
 
